@@ -1,0 +1,230 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f9;
+    color: #1f2933;
+}
+
+/* Utility */
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Header and Navigation */
+header {
+    background-color: #111827;
+    color: #ffffff;
+    padding: 15px 0;
+    margin-bottom: 20px;
+}
+
+.logo {
+    float: left;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav {
+    float: right;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #e5e7eb;
+    font-weight: 500;
+    padding-bottom: 4px;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    border-bottom: 2px solid #f97316;
+    color: #ffffff;
+}
+
+/* Clearfix */
+header::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(135deg, #1e293b, #111827);
+    color: #ffffff;
+    padding: 60px 0;
+    text-align: center;
+    margin-bottom: 30px;
+    border-radius: 0 0 16px 16px;
+}
+
+.hero h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.hero h2 span {
+    color: #fbbf24;
+}
+
+.hero p {
+    max-width: 600px;
+    margin: 0 auto 20px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 5px;
+    border-radius: 20px;
+    border: none;
+    text-decoration: none;
+    background-color: #f97316;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.btn-outline {
+    background-color: transparent;
+    border: 2px solid #f97316;
+}
+
+/* Sections */
+.section {
+    padding: 20px 0 40px;
+}
+
+.section h2 {
+    margin-bottom: 15px;
+    border-bottom: 2px solid #e5e7eb;
+    padding-bottom: 5px;
+}
+
+/* Resume Styles */
+.resume-header h3 {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.resume-header p {
+    font-size: 14px;
+}
+
+.timeline {
+    list-style: none;
+    padding-left: 0;
+}
+
+.timeline li {
+    margin-bottom: 10px;
+    padding-left: 10px;
+    border-left: 3px solid #f97316;
+}
+
+/* Skills Grid */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 15px;
+}
+
+.skills-grid h4 {
+    margin-bottom: 5px;
+}
+
+.skills-grid ul {
+    list-style: disc;
+    margin-left: 18px;
+}
+
+/* Bio-data table */
+.biodata-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.biodata-table th,
+.biodata-table td {
+    border: 1px solid #d1d5db;
+    padding: 8px 10px;
+    text-align: left;
+}
+
+.biodata-table th {
+    width: 30%;
+    background-color: #e5e7eb;
+    font-weight: 600;
+}
+
+.signature {
+    text-align: right;
+    margin-top: 20px;
+}
+
+/* Contact */
+.contact-list {
+    list-style: none;
+    margin: 10px 0 20px;
+}
+
+.contact-list li {
+    margin-bottom: 5px;
+}
+
+.contact-form {
+    max-width: 400px;
+}
+
+.contact-form label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 8px;
+    border-radius: 6px;
+    border: 1px solid #d1d5db;
+    font-size: 14px;
+}
+
+.info-text {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #16a34a;
+}
+
+/* Footer */
+footer {
+    background-color: #111827;
+    color: #9ca3af;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+}

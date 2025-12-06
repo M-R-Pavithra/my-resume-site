@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Aarav Sharma - Contact</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="script1.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1 class="logo">Aarav Sharma</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="biodata.html">Bio-data</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="section">
+        <div class="container">
+            <h2>Contact Me</h2>
+
+            <p>You can contact me using the details below:</p>
+
+            <ul class="contact-list">
+                <li><strong>Email:</strong> aarav.sharma@example.com</li>
+                <li><strong>Phone:</strong> +91-9876543210</li>
+                <li><strong>Address:</strong> Flat No. 302, Green Valley Apartments, Thane (W), Maharashtra</li>
+            </ul>
+
+            <h3>Quick Contact Form (Demo Only)</h3>
+            <form class="contact-form" onsubmit="return false;">
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Enter your name">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Enter your email">
+
+                <label for="message">Message:</label>
+                <textarea id="message" rows="4" placeholder="Type your message here"></textarea>
+
+                <button type="submit" id="contactSubmit" class="btn">Send (Demo)</button>
+            </form>
+
+            <p id="contactMessage" class="info-text"></p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 Aarav Sharma. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
